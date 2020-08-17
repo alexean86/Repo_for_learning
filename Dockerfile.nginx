@@ -1,0 +1,8 @@
+FROM nginx:latest
+#ADD FILES_FOR_NGINX/index.html /usr/share/nginx/html
+#ADD FILES_FOR_NGINX/nginx.conf /etc/nginx/nginx.conf
+#ADD FILES_FOR_NGINX/entrypoint.sh entrypoint.sh
+#RUN chmod u+x entrypoint.sh
+#EXPOSE 80
+#CMD ["./entrypoint.sh"]
+CMD ["nginx", "-g", "daemon off"]
