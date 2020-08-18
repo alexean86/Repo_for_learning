@@ -1,0 +1,7 @@
+# defaults file for nginx
+- name: nginx setup
+  hosts: local
+  connection: local
+  roles: 
+  - role: nginx
+
