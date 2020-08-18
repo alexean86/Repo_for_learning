@@ -1,5 +1,0 @@
-FROM alpine
-RUN apk update --no-cache && apk add git
-WORKDIR /data
-ENTRYPOINT ["git", "clone"]
-CMD ["https://github.com/Dgadavin/devopsology-base-course.git"]
